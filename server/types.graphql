@@ -1,0 +1,38 @@
+# The following types define the data model of the example service
+# based on which the GraphQL API is generated
+
+type User @model {
+  id: ID! @isUnique
+  username: String!
+  age: Int!
+  weight: Int!
+   createdAt: DateTime! # read-only (managed by Graphcool)
+   updatedAt: DateTime! # read-only (managed by Graphcool)
+
+  # Uncomment below - you can declare relations between models like this
+
+   exerciseposts: [PostExercise!]! @relation(name: "UserPostsExercise")
+   waterposts: [PostWater!]! @relation(name: "UserPostsWater")
+}
+
+
+# Uncomment the model below as well
+
+ type PostExercise @model {
+   id: ID! @isUnique
+   createdAt: DateTime! # read-only (managed by Graphcool)
+   intenisty: Int!
+   time: Int!
+
+   # Every relation also required a back-relation (to determine 1:1, 1:n or n:m)
+   author: User! @relation(name: "UserPostsExercise")
+ }
+
+ type PostWater @model {
+   id: ID! @isUnique
+   createdAt: DateTime! # read-only (managed by Graphcool)
+   size: Int!
+
+   # Every relation also required a back-relation (to determine 1:1, 1:n or n:m)
+   author: User! @relation(name: "UserPostsWater")
+ }

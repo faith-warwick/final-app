@@ -1,0 +1,23 @@
+.topright {
+  display: flex;
+  justify-self: center;
+  justify-content: flex-end;
+  width: 95vw;
+  padding: 16px; }
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100vw;
+  height: 90vh;
+  position: relative; }
+
+text {
+  font-family: 'Amatic SC', cursive;
+  font-size: 60px; }
+
+.landingBody {
+  background: url("../../images/shittycat2.png") white center; }
+
+/*# sourceMappingURL=landing.css.map */

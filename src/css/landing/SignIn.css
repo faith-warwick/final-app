@@ -1,0 +1,32 @@
+.signInBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("../../../images/smollcat.png") white 20% 20% no-repeat; }
+
+.form-group2 {
+  padding: 30px !important; }
+
+.signInForm {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  margin: 16px; }
+
+.btnCont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; }
+
+.btn2 {
+  width: 20vw !important; }
+
+p {
+  text-align: center; }
+
+.signIn {
+  background: white; }
+
+/*# sourceMappingURL=SignIn.css.map */
